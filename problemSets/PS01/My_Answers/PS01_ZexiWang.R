@@ -59,41 +59,91 @@ print("t-test results indicate that the average student IQ in this school is not
 expenditure <- read.table("https://raw.githubusercontent.com/ASDS-TCD/StatsI_Fall2024/main/datasets/expenditure.txt", header=T)
 
 ### 2.1 ### 
-setwd("D:/大学/AAAA_TCD的文件/AAAA_上课/StatsI_Fall2024/problemSets/PS01/My_Answers/")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 ## Plot Y~X1
-png(file = "output/Y~X1.png")
+png(file = "Y~X1.png")
 plot( expenditure$X1,
       expenditure$Y,
-      ylab="Y",
-      xlab="X1",
-      main="The Relationship between Y and X1")
+      ylab = "Per capita expenditure on shelters/housing assistance in state",
+      xlab = "Per capita personal income in state",
+      main = "Figure1: The Relationship between Y and X1")
 dev.off()
 ## Plot Y~X2
-png(file = "output/Y~X2.png")
+png(file = "Y~X2.png")
 plot( expenditure$X2,
       expenditure$Y,
-      ylab="Y",
-      xlab="X2",
-      main="The Relationship between Y and X2")
+      ylab = "Per capita expenditure on shelters/housing assistance in state",
+      xlab = "Number of residents per 100,000 that are “financially insecure” in state",
+      main = "Figure2: The Relationship between Y and X2")
 dev.off()
 ## Plot Y~X3 
-png(file = "output/Y~X3.png")
+png(file = "Y~X3.png")
 plot( expenditure$X3,
       expenditure$Y,
-      ylab="Y",
-      xlab="X3",
-      main="The Relationship between Y and X3")
+      ylab = "Per capita expenditure on shelters/housing assistance in state",
+      xlab = "Number of people per thousand residing in urban areas in state",
+      main = "Figure3: The Relationship between Y and X3")
 dev.off()
-print("The scatter plots demonstrate that as X1 and X3 increase, Y also rises correspondingly. As X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2")
+print("The scatter plots demonstrate that as X1 and X3 increase, Y also rises correspondingly (Figure1, 3). As X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2 (Figure 2).")
+
+## Plot X1~X3 
+png(file = "X1~X3.png")
+plot( expenditure$X3,
+      expenditure$X1,
+      ylab = "Per capita personal income in state",
+      xlab = "Number of people per thousand residing in urban areas in state",
+      main = "Figure4: The Relationship between X1 and X3")
+dev.off()
+
+## Plot X2~X3 
+png(file = "X2~X3.png")
+plot( expenditure$X3,
+      expenditure$X2,
+      ylab = "Number of residents per 100,000 that are “financially insecure” in state",
+      xlab = "Number of people per thousand residing in urban areas in state",
+      main = "Figure5: The Relationship between X2 and X3")
+dev.off()
+
+## Plot X1~X2 
+png(file = "X1~X2.png")
+plot( expenditure$X2,
+      expenditure$X1,
+      ylab = "Per capita personal income in state",
+      xlab = "Number of residents per 100,000 that are “financially insecure” in state",
+      main = "Figure6: The Relationship between X1 and X2")
+dev.off()
+
 
 ### 2.2 ###
-png(file = "output/Y~Region.png")
+png(file = "Y~Region.png")
 boxplot( expenditure$Y ~ expenditure$Region, 
-        main="The Relationship between Y and Region",
-        ylab="Y",
-        xlab="Region",
-        names=c("1", "2","3","4"))
+         ylab = "Per capita expenditure on shelters/housing assistance in state",
+         xlab = "Region",
+         main = "Figure7: The Relationship between Y and Region",
+         names=c("Northeast", "North Central","South","West"))
 dev.off()
-print("The box plot indicates that region 4 has  has the highest per capita expenditure on housing assistance ")
+print("The box plot indicates that region 4 has the highest per capita expenditure on housing assistance ")
 
 ### 2.3 ###
+png(file = "Y~X1_Region.png")
+plot( expenditure$X1,
+      expenditure$Y,
+      col = expenditure$Region,
+      pch = 19,
+      ylab = "Per capita expenditure on shelters/housing assistance in state",
+      xlab = "Per capita personal income in state",
+      main = "Figure8: Relationship between Y and X1")
+legend( "topleft",
+        legend = c("Northeast", "North Central","South","West"),
+        col = c("1","2","3","4"),
+        pch = 19,
+        cex = 0.8)
+for (region in unique(expenditure$Region)) {
+  region_data <- subset(expenditure, Region == region)
+  fit <- lm(Y~X1,data = region_data)
+  abline(fit,col = region)
+}
+dev.off()
+regression1 <- lm(Y~X1, data=expenditure)
+regression1
+print("The graph indicates that as per capita personal income increases, the per capita expenditure on housing assistance also increases accordingly. This suggests that states with higher economic development and per capita income may be more inclined to invest more funds in housing assistance.")

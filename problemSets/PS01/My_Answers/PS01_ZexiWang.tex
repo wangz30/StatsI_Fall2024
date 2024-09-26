@@ -81,16 +81,20 @@
 A school counselor was curious about the average of IQ of the students in her school and took a random sample of 25 students' IQ scores. The following is the data set:\\
 \vspace{.5cm}
 
-\lstinputlisting[language=R, firstline=36, lastline=36]{PS01.R}  
+\lstinputlisting[language=R, firstline=36, lastline=36]{PS01_ZexiWang.R}  
 
 \vspace{1cm}
 
 \begin{enumerate}
 	\item Find a 90\% confidence interval for the average student IQ in the school.\\
-	
+	\lstinputlisting[language=R, firstline=36, lastline=49]{PS01_ZexiWang.R} 
+\noindent Answer: 90\% confidence interval for the average student IQ in the school is: ( 94.15 , 102.73 )
+
 	\item Next, the school counselor was curious  whether  the average student IQ in her school is higher than the average IQ score (100) among all the schools in the country.\\ 
 	
 	\noindent Using the same sample, conduct the appropriate hypothesis test with $\alpha=0.05$.
+	\lstinputlisting[language=R, firstline=51, lastline=53]{PS01_ZexiWang.R} 
+\noindent Answer: t-test results indicate that the average student IQ in this school is not significantly different from the average IQ score of 100 among all schools in the country( p = 0.5569 \textgreater 0.05)
 \end{enumerate}
 
 \newpage
@@ -112,13 +116,44 @@ A school counselor was curious about the average of IQ of the students in her sc
 
 \vspace{.5cm}
 \noindent Explore the \texttt{expenditure} data set and import data into \texttt{R}.
-\vspace{.5cm}
-\lstinputlisting[language=R, firstline=54, lastline=54]{PS01.R}  
-\vspace{.5cm}
+
+\lstinputlisting[language=R, firstline=54, lastline=54]{PS01_ZexiWang.R}  
+
 \begin{itemize}
 
+\lstinputlisting[language=R, firstline=59, lastline=59]{PS01_ZexiWang.R}  
 \item
 Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3}? What are the correlations among them (you just need to describe the graph and the relationships among them)?
+\lstinputlisting[language=R, firstline=61, lastline=87]{PS01_ZexiWang.R}  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{Y~X1.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{Y~X2.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{Y~X3.png}
+\end{figure}
+\noindent The scatter plots demonstrate that as X1 and X3 increase, Y also rises correspondingly (Figure1, 3). As X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2 (Figure 2). \\
+
+\lstinputlisting[language=R, firstline=88, lastline=87]{PS01_ZexiWang.R}  
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{X1~X3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{X2~X3.png}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{X1~X2.png}
+\end{figure}
+
+
 \vspace{.5cm}
 \item
 Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
