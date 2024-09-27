@@ -124,43 +124,62 @@ A school counselor was curious about the average of IQ of the students in her sc
 \lstinputlisting[language=R, firstline=59, lastline=59]{PS01_ZexiWang.R}  
 \item
 Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3}? What are the correlations among them (you just need to describe the graph and the relationships among them)?
-\lstinputlisting[language=R, firstline=61, lastline=87]{PS01_ZexiWang.R}  
+\lstinputlisting[language=R, firstline=61, lastline=95]{PS01_ZexiWang.R}  
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{Y~X1.png}
+	\includegraphics[width=.55\textwidth]{Y~X1.png}
 \end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.6\textwidth]{Y~X2.png}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.6\textwidth]{Y~X3.png}
-\end{figure}
-\noindent The scatter plots demonstrate that as X1 and X3 increase, Y also rises correspondingly (Figure1, 3). As X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2 (Figure 2). \\
+\noindent The correlation coefficient between Y and X1 is 0.531, Figure 1 illustrates that as X1 increases, the value of Y also increases gradually. \\
 
-\lstinputlisting[language=R, firstline=88, lastline=87]{PS01_ZexiWang.R}  
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.6\textwidth]{X1~X3.png}
+	\includegraphics[width=.55\textwidth]{Y~X2.png}
 \end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.6\textwidth]{X2~X3.png}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.6\textwidth]{X1~X2.png}
-\end{figure}
+\noindent The correlation coefficient between Y and X2 is 0.448, Figure 2 illustrates that as X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2. \\
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.55\textwidth]{Y~X3.png}
+\end{figure}
+\noindent The correlation coefficient between Y and X3 is 0.463, Figure 3 illustrates that as X3 increases, the value of Y also increases gradually. \\
 
-\vspace{.5cm}
+\lstinputlisting[language=R, firstline=96, lastline=126]{PS01_ZexiWang.R}  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.55\textwidth]{X1~X3.png}
+\end{figure}
+\noindent The correlation coefficient between Y and X3 is 0.595, Figure4 demonstrate that as X3 increase, X1 also rises correspondingly. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.55\textwidth]{X2~X3.png}
+\end{figure}
+\noindent The correlation coefficient between Y and X3 is 0.463, Figure 3 illustrates that as X3 increases, the value of Y also increases gradually. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.55\textwidth]{X1~X2.png}
+\end{figure}
+\noindent The correlation coefficient between Y and X3 is 0.463, Figure 3 illustrates that as X3 increases, the value of Y also increases gradually. \\
+
 \item
 Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
-\vspace{.5cm}
+\lstinputlisting[language=R, firstline=129, lastline=137]{PS01_ZexiWang.R}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.55\textwidth]{Y~Region.png}
+\end{figure}
+\noindent The box plot (Figure7) indicates that West Region (Region 4) has the highest per capita expenditure on housing assistance. \\
+
 \item
 Please plot the relationship between \emph{Y} and \emph{X1}? Describe this graph and the relationship. Reproduce the above graph including one more variable \emph{Region} and display different regions with different types of symbols and colors.
+\lstinputlisting[language=R, firstline=139, lastline=162]{PS01_ZexiWang.R} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\textwidth]{Y~X1_Region.png}
+\end{figure} 
+\noindent Figure8 indicates that as per capita personal income increases, the per capita expenditure on housing assistance also increases accordingly. This suggests that states with higher economic development and per capita income may be more inclined to invest more funds in housing assistance. \\
+
 \end{itemize}
-
-
 \end{document}

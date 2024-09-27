@@ -68,6 +68,9 @@ plot( expenditure$X1,
       xlab = "Per capita personal income in state",
       main = "Figure1: The Relationship between Y and X1")
 dev.off()
+cor(expenditure$Y, expenditure$X1)
+print("The correlation coefficient between Y and X1 is 0.531, Figure 1 illustrates that as X1 increases, the value of Y also increases gradually.")
+
 ## Plot Y~X2
 png(file = "Y~X2.png")
 plot( expenditure$X2,
@@ -76,6 +79,9 @@ plot( expenditure$X2,
       xlab = "Number of residents per 100,000 that are “financially insecure” in state",
       main = "Figure2: The Relationship between Y and X2")
 dev.off()
+cor(expenditure$Y, expenditure$X2)
+print("The correlation coefficient between Y and X2 is 0.448, Figure 2 illustrates that as X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2.")
+
 ## Plot Y~X3 
 png(file = "Y~X3.png")
 plot( expenditure$X3,
@@ -84,7 +90,8 @@ plot( expenditure$X3,
       xlab = "Number of people per thousand residing in urban areas in state",
       main = "Figure3: The Relationship between Y and X3")
 dev.off()
-print("The scatter plots demonstrate that as X1 and X3 increase, Y also rises correspondingly (Figure1, 3). As X2 increases, Y decreases until X2 reaches approximately 300, at which point Y begins to increase with further increases in X2 (Figure 2).")
+cor(expenditure$Y, expenditure$X3)
+print("The correlation coefficient between Y and X3 is 0.463, Figure 3 illustrates that as X3 increases, the value of Y also increases gradually.")
 
 ## Plot X1~X3 
 png(file = "X1~X3.png")
@@ -94,6 +101,8 @@ plot( expenditure$X3,
       xlab = "Number of people per thousand residing in urban areas in state",
       main = "Figure4: The Relationship between X1 and X3")
 dev.off()
+cor(expenditure$X1, expenditure$X3)
+print("The correlation coefficient between X1 and X3 is 0.595, Figure4 demonstrate that as X3 increase, X1 also rises correspondingly.")
 
 ## Plot X2~X3 
 png(file = "X2~X3.png")
@@ -103,6 +112,8 @@ plot( expenditure$X3,
       xlab = "Number of people per thousand residing in urban areas in state",
       main = "Figure5: The Relationship between X2 and X3")
 dev.off()
+cor(expenditure$X2, expenditure$X3)
+print("The correlation coefficient between X2 and X3 is 0.221, indicating a weak positive correlation between X2 and X3. Figure 5 illustrates this relationship.")
 
 ## Plot X1~X2 
 png(file = "X1~X2.png")
@@ -112,7 +123,8 @@ plot( expenditure$X2,
       xlab = "Number of residents per 100,000 that are “financially insecure” in state",
       main = "Figure6: The Relationship between X1 and X2")
 dev.off()
-
+cor(expenditure$X1, expenditure$X2)
+print("The correlation coefficient between X1 and X2 is 0.206, indicating a weak positive correlation between X1 and X2. Figure 6 illustrates this relationship.")
 
 ### 2.2 ###
 png(file = "Y~Region.png")
@@ -122,7 +134,7 @@ boxplot( expenditure$Y ~ expenditure$Region,
          main = "Figure7: The Relationship between Y and Region",
          names=c("Northeast", "North Central","South","West"))
 dev.off()
-print("The box plot indicates that region 4 has the highest per capita expenditure on housing assistance ")
+print("The box plot (Figure7) indicates that West Region (Region 4) has the highest per capita expenditure on housing assistance.")
 
 ### 2.3 ###
 png(file = "Y~X1_Region.png")
@@ -146,4 +158,4 @@ for (region in unique(expenditure$Region)) {
 dev.off()
 regression1 <- lm(Y~X1, data=expenditure)
 regression1
-print("The graph indicates that as per capita personal income increases, the per capita expenditure on housing assistance also increases accordingly. This suggests that states with higher economic development and per capita income may be more inclined to invest more funds in housing assistance.")
+print("Figure8 indicates that as per capita personal income increases, the per capita expenditure on housing assistance also increases accordingly. This suggests that states with higher economic development and per capita income may be more inclined to invest more funds in housing assistance.")

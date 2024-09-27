@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.24)  26 SEP 2024 22:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.24)  27 SEP 2024 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,7 +896,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 ...dents per 100,000 that are “financially 
+l.79 ...dents per 100,000 that are “financially 
                                                   insecure” in state",
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -911,7 +911,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 ...dents per 100,000 that are “financially 
+l.79 ...dents per 100,000 that are “financially 
                                                   insecure” in state",
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -926,7 +926,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 ...0,000 that are “financially insecure” 
+l.79 ...0,000 that are “financially insecure” 
                                                   in state",
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -941,7 +941,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 ...0,000 that are “financially insecure” 
+l.79 ...0,000 that are “financially insecure” 
                                                   in state",
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -956,7 +956,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.76 ...0,000 that are “financially insecure” 
+l.79 ...0,000 that are “financially insecure” 
                                                   in state",
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -965,43 +965,250 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 [3])
-<Y~X1.png, id=80, 481.8pt x 481.8pt>
+<Y~X1.png, id=79, 481.8pt x 481.8pt>
 File: Y~X1.png Graphic file (type png)
 <use Y~X1.png>
 Package pdftex.def Info: Y~X1.png  used on input line 130.
-(pdftex.def)             Requested size: 281.85587pt x 281.86288pt.
-<Y~X2.png, id=81, 481.8pt x 481.8pt>
-File: Y~X2.png Graphic file (type png)
-<use Y~X2.png>
-Package pdftex.def Info: Y~X2.png  used on input line 134.
-(pdftex.def)             Requested size: 281.85587pt x 281.86288pt.
-<Y~X3.png, id=82, 481.8pt x 481.8pt>
-File: Y~X3.png Graphic file (type png)
-<use Y~X3.png>
-Package pdftex.def Info: Y~X3.png  used on input line 138.
-(pdftex.def)             Requested size: 281.85587pt x 281.86288pt.
- [4 <./Y~X1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[5 <./Y~X2.png> <./Y~X3.png>] (PS01_ZexiWang.R)
-<X1~X3.png, id=98, 481.8pt x 481.8pt>
+<Y~X2.png, id=80, 481.8pt x 481.8pt>
+File: Y~X2.png Graphic file (type png)
+<use Y~X2.png>
+Package pdftex.def Info: Y~X2.png  used on input line 136.
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+[4 <./Y~X1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
+ []
+
+<Y~X3.png, id=98, 481.8pt x 481.8pt>
+File: Y~X3.png Graphic file (type png)
+<use Y~X3.png>
+Package pdftex.def Info: Y~X3.png  used on input line 142.
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+[5 <./Y~X2.png> <./Y~X3.png>] (PS01_ZexiWang.R
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@\lst@EC�).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...ents per 100,000 that are “financially 
+                                                  insecure” in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "9C.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...ents per 100,000 that are “financially 
+                                                  insecure” in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter\lst@FillFixed@).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...,000 that are “financially insecure” 
+                                                  in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "80.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...,000 that are “financially insecure” 
+                                                  in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "9D.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...,000 that are “financially insecure” 
+                                                  in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\lst@FillFixed@\lst@EC�).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...ents per 100,000 that are “financially 
+                                                  insecure” in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "9C.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...ents per 100,000 that are “financially 
+                                                  insecure” in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (�\expandafter\lst@FillFixed@).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...,000 that are “financially insecure” 
+                                                  in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "80.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...,000 that are “financially insecure” 
+                                                  in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "9D.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 ...,000 that are “financially insecure” 
+                                                  in state",
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+)
+<X1~X3.png, id=105, 481.8pt x 481.8pt>
 File: X1~X3.png Graphic file (type png)
 <use X1~X3.png>
-Package pdftex.def Info: X1~X3.png  used on input line 145.
-(pdftex.def)             Requested size: 281.85587pt x 281.86288pt.
-<X2~X3.png, id=99, 481.8pt x 481.8pt>
+Package pdftex.def Info: X1~X3.png  used on input line 150.
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+
+ []
+
+<X2~X3.png, id=142, 481.8pt x 481.8pt>
 File: X2~X3.png Graphic file (type png)
 <use X2~X3.png>
-Package pdftex.def Info: X2~X3.png  used on input line 149.
-(pdftex.def)             Requested size: 281.85587pt x 281.86288pt.
-<X1~X2.png, id=100, 481.8pt x 481.8pt>
+Package pdftex.def Info: X2~X3.png  used on input line 156.
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+[7 <./X1~X3.png> <./X2~X3.png>]
+<X1~X2.png, id=150, 481.8pt x 481.8pt>
 File: X1~X2.png Graphic file (type png)
 <use X1~X2.png>
-Package pdftex.def Info: X1~X2.png  used on input line 153.
+Package pdftex.def Info: X1~X2.png  used on input line 162.
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+(PS01_ZexiWang.R)
+<Y~Region.png, id=151, 481.8pt x 481.8pt>
+File: Y~Region.png Graphic file (type png)
+<use Y~Region.png>
+Package pdftex.def Info: Y~Region.png  used on input line 171.
+(pdftex.def)             Requested size: 258.36668pt x 258.37431pt.
+ [8 <./X1~X2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+(PS01_ZexiWang.R
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+53.
+ (D:\Latex\latexinstall\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 153.
+ [9 <./Y~Region.png>])
+<Y~X1_Region.png, id=193, 481.8pt x 481.8pt>
+File: Y~X1_Region.png Graphic file (type png)
+<use Y~X1_Region.png>
+Package pdftex.def Info: Y~X1_Region.png  used on input line 180.
 (pdftex.def)             Requested size: 281.85587pt x 281.86288pt.
- [6 <./X1~X3.png>] [7 <./X2~X3.png> <./X1~X2.png>] [8] (PS01_ZexiWang.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+[10 <./Y~X1_Region.png>] (PS01_ZexiWang.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1010,10 +1217,10 @@ Package rerunfilecheck Info: File `PS01_ZexiWang.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27306 strings out of 474486
- 471815 string characters out of 5754542
- 2131542 words of memory out of 5000000
- 49036 multiletter control sequences out of 15000+600000
+ 27427 strings out of 474486
+ 473814 string characters out of 5754542
+ 2188542 words of memory out of 5000000
+ 49076 multiletter control sequences out of 15000+600000
  568855 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,93p,3247b,2142s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1025,11 +1232,12 @@ xinstall/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Latex/latexinstall/fonts
 /type1/public/amsfonts/cm/cmr10.pfb><D:/Latex/latexinstall/fonts/type1/public/a
 msfonts/cm/cmr12.pfb><D:/Latex/latexinstall/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb><D:/Latex/latexinstall/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Latex/
-latexinstall/fonts/type1/public/amsfonts/cm/cmti12.pfb><D:/Latex/latexinstall/f
-onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on PS01_ZexiWang.pdf (8 pages, 175024 bytes).
+latexinstall/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Latex/latexinstall/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><D:/Latex/latexinstall/fonts/type1/pub
+lic/amsfonts/cm/cmtt12.pfb>
+Output written on PS01_ZexiWang.pdf (10 pages, 216363 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
