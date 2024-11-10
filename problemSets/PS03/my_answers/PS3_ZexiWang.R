@@ -29,16 +29,15 @@ pkgTest <- function(pkg){
 
 # set wd for current folder
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
+library(stargazer)
 ########### Question 1 ########### 
-
 # read in data
 inc.sub <- read.csv("https://raw.githubusercontent.com/ASDS-TCD/StatsI_Fall2024/main/datasets/incumbents_subset.csv")
 
 ### 1.1 ###
 # outcome variable-voteshare, explanatory variable-difflog
 model_vote_dif <- lm(voteshare ~ difflog, data = inc.sub)
-
+stargazer(model_vote_dif, type = "text", single.row = TRUE, out = "model_vote_dif.txt")
 ### 1.2 ###
 # scatter plot
 pdf("Q1_2_scatterplot.pdf")
@@ -58,7 +57,7 @@ model_vote_dif_resid <- resid(model_vote_dif)
 ### 2.1 ###
 # outcome variable-presvote, explanatory variable-difflog
 model_pres_dif <- lm(presvote ~ difflog, data = inc.sub)
-
+stargazer(model_pres_dif, type = "text", single.row = TRUE, out = "model_pres_dif.txt")
 ### 2.2 ###
 # scatter plot
 pdf("Q2_2_scatterplot.pdf")
@@ -78,7 +77,7 @@ model_pres_dif_resid <- resid(model_pres_dif)
 ### 3.1 ###
 # outcome variable-voteshare, explanatory variable-presvote
 model_vote_pres <- lm(voteshare ~ presvote, data = inc.sub)
-
+stargazer(model_vote_pres, type = "text", single.row = TRUE, out = "model_vote_pres.txt")
 ### 3.2 ###
 # scatter plot
 pdf("Q3_2_scatterplot.pdf")
@@ -97,7 +96,7 @@ model_vote_pres_resid <- resid(model_vote_pres)
 ### 4.1 ###
 # residuals model
 residuals_model <- lm(model_vote_dif_resid ~ model_pres_dif_resid)
-
+stargazer(residuals_model, type = "text", single.row = TRUE, out = "residuals_model.txt")
 ### 4.2 ###
 # scatter plot
 pdf("Q4_2_scatterplot.pdf")
@@ -113,4 +112,4 @@ dev.off()
 ### 5.1 ###
 # outcome variable-voteshare, explanatory variables-difflog & presvote
 model_vote_diff_pres <- lm(voteshare ~ difflog + presvote, data= inc.sub)
-
+stargazer(model_vote_diff_pres, type = "text", single.row = TRUE, out = "model_vote_diff_pres.txt")
