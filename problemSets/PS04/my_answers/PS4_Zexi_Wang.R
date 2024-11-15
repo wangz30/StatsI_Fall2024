@@ -36,6 +36,7 @@ library(stargazer)
 ### a ###
 data(Prestige)
 Prestige$professional <- ifelse(Prestige$type == "prof", 1, 0)
+Prestige$professional <- as.factor(Prestige$professional)
 # It can be seen that there are 4 missing values in 
 # the "type", which makes their "professional" NA.
 # If we wanna dropping them, here is the code
